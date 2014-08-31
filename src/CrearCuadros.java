@@ -10,7 +10,7 @@ import java.awt.event.ItemListener;
  */
 public class CrearCuadros extends JFrame implements ActionListener {
     JPanel p1,p2,p3,sp1,sp2;
-    String[] dimensiones = {"Selecciona una dimension","4","5","6","7","8","9","10"};
+    String[] dimensiones = {"4","5","6","7","8","9","10"};
     JComboBox squareSize;
 //    JButton[][] cajitas;
     JTextField[][] cajitas;
@@ -22,7 +22,7 @@ public class CrearCuadros extends JFrame implements ActionListener {
         super("Pintar cuadritos");
         this.setLayout(new FlowLayout());
         squareSize = new JComboBox(dimensiones);
-        squareSize.setSelectedIndex(1);
+        squareSize.setSelectedIndex(0);
         squareSize.addActionListener(this);
 
         titulo = new JLabel("Dimension de la matriz cuadrada");
